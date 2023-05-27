@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="416dp"
+        android:layout_height="660dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto_cielo" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/edittext_bg_transparent">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_toStartOf="@+id/searchIcon"
+            android:background="@android:color/transparent"
+            android:hint="Ubicacion"
+            android:paddingStart="100dp"
+            android:textColorHint="#9E9E9E"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@id/searchIcon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Weather Plus"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal" />
+
+
+
+    <TextView
+        android:id="@+id/id_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="102dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Barcelona"
+        android:textColor="#FFFF"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/id_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="405dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="20 c"
+        android:textColor="#FFFF"
+        android:textSize="90dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_temp"
+        android:layout_marginTop="16dp" />
+
+
+
+
+
+
+</RelativeLayout>
